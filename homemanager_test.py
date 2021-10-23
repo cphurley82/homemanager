@@ -1,9 +1,13 @@
-import homemanager
+# -*- coding: utf-8 -*-
+"""homemanager unit tests."""
+
 import io
-import keyring
+
+import homemanager
 
 
 def test_get_host_names():
+    """Ensure get_host_names() can extract names from a json file object."""
     assert homemanager.get_host_names_from_file(file=io.StringIO('''
         {
         "host_names": [
@@ -16,5 +20,6 @@ def test_get_host_names():
 
 
 def test_ping_host():
-    assert homemanager.ping_host('localhost') == True
-    assert homemanager.ping_host('not.a.real.host') == False
+    """Ensure ping_host() returns True is host is pingable and Falso if not."""
+    assert homemanager.ping_host('localhost') is True
+    assert homemanager.ping_host('not.a.real.host') is False
