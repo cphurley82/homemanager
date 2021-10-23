@@ -1,6 +1,7 @@
 # homemanager
 
 ![Pylint](https://github.com/cphurley82/homemanager/actions/workflows/pylint.yml/badge.svg)
+![Pytest](https://github.com/cphurley82/homemanager/actions/workflows/pytest.yml/badge.svg)
 
 Makes managing technology at home easier.
 
