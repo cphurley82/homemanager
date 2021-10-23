@@ -1,5 +1,7 @@
 # homemanager
 
+![Pylint](https://github.com/cphurley82/homemanager/actions/workflows/pylint.yml/badge.svg)
+
 Makes managing technology at home easier.
 
 Currently all this does is ping a list of hosts and shuts them down if they
