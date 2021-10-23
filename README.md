@@ -14,27 +14,27 @@ which can be installed with pip like so:
 pip install --requirement requirements.txt
 ```
 
-homemanger is configured by creating a file called `config.json` in the working
-direcoty. It looks like this:
+homemanager is configured by creating a file called `config.json` in the working
+directory. It looks like this:
 
 ```json
 {
     "host_names": [
-        // Domnain names or IP addresses of the hosts being managed.
+        // Domain names or IP addresses of the hosts being managed.
         "computer1.local",
         "192.168.42.42"
     ]
 }
 ```
 
-homemanger requires a password to be stored in the system keyring like so:
+homemanager requires a password to be stored in the system keyring like so:
 
 ```bash
 python -m keyring set system homemanager
 ```
 
-Run homemanger like so:
+Run homemanager like so:
 
 ```bash
-python3 homemanger.py
+python3 homemanager.py
 ```

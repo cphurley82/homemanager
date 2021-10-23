@@ -30,10 +30,10 @@ def main():
     for host_name in get_host_names():
         print(f'Pinging {host_name}...', end='')
         response = ping3.ping(dest_addr=host_name)
-        if response == False:
+        if response == False or response == None:
             print(f'no response.')
         else:
-            print(f'resonse in {response} secs, shutting it down...')
+            print(f'response in {response} secs, shutting it down...')
 
             # SSH into the host using the password saved in the keyring.
             client = paramiko.SSHClient()
