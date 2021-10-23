@@ -15,11 +15,6 @@ def test_get_host_names():
         ''')) == ['computer1.local', '192.168.42.42']
 
 
-def test_get_password():
-    keyring.set_password('system', 'homemanager', 'password')
-    assert homemanager.get_password() == 'password'
-
-
 def test_ping_host():
     assert homemanager.ping_host('localhost') == True
     assert homemanager.ping_host('not.a.real.host') == False
