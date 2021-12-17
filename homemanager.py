@@ -55,6 +55,7 @@ def main():
             # Execute the shutdown command.
             stdin, stdout, stderr = client.exec_command(
                 'sudo -S shutdown -h now')
+                # 'sudo -S ls -la') # For testing.
 
             # Provide the password to sudo.
             stdin.write(get_password() + "\n")

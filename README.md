@@ -14,7 +14,7 @@ homemanager requires Python 3.6 or above and [some packages](requirements.txt)
 which can be installed with pip like so:
 
 ```bash
-pip install --requirement requirements.txt
+pip3 install --requirement requirements.txt
 ```
 
 homemanager is configured by creating a file called `config.json` in the working
@@ -33,7 +33,7 @@ directory. It looks like this:
 homemanager requires a password to be stored in the system keyring like so:
 
 ```bash
-python -m keyring set system homemanager
+python3 -m keyring set system homemanager
 ```
 
 Run homemanager like so:
