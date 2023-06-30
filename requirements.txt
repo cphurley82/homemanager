@@ -2,3 +2,4 @@ keyring
 paramiko
 ping3
 commentjson
+pytest
